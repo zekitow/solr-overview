@@ -1,0 +1,10 @@
+= solr-overview
+
+== Simple Solr 4 overview
+
+Just an overview about solr, using jquery to search.
+
+
+== Solr start
+
+  java -Dsolr.solr.home=multicore -jar start.jar
