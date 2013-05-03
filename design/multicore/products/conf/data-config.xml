@@ -1,0 +1,25 @@
+<dataConfig>
+  <dataSource driver="com.mysql.jdbc.Driver" url="jdbc:mysql://localhost:3306/solr" user="root" password="" batchSize="-1" readOnly="false"/>
+
+  <document>
+    <entity name="product" pk="id" query="
+      select categories.id,
+             categories.name as category,
+             products.id as product_id,
+             products.name as product_name,
+             products.price as price
+        from categories
+       inner join products on
+             categories.id = products.category_id">
+
+      <field column="product_id"   name="id" />
+      <field column="id"           name="category_id" />
+      <field column="category"     name="category" />
+      <field column="product_name" name="product_name" />
+      <field column="price"        name="price" />
+    </entity>
+  </document>
+
+</dataConfig>
+
+

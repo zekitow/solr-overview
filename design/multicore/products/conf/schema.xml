@@ -1,0 +1,21 @@
+<?xml version="1.0" ?>
+<schema name="example core zero" version="1.1">
+  <types>
+   <fieldtype name="string"  class="solr.StrField" sortMissingLast="true" omitNorms="true"/>
+   <fieldType name="long" class="solr.TrieLongField" precisionStep="0" positionIncrementGap="0"/>
+  </types>
+
+ <fields>
+  <field name="id"           type="long"   indexed="true"  stored="true" required="true"/>
+  <field name="category"     type="string" indexed="true"  stored="true" />
+  <field name="category_id"  type="long"   indexed="true"  stored="true" />
+  <field name="product_name" type="string" indexed="true"  stored="true" />
+  <field name="price"        type="long"   indexed="true"  stored="true" />
+  <field name="_version_"    type="long"   indexed="true"  stored="true"/>
+ </fields>
+
+ <uniqueKey>id</uniqueKey>
+ <defaultSearchField>category</defaultSearchField>
+ <solrQueryParser defaultOperator="OR"/>
+</schema>
+
