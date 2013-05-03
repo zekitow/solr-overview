@@ -7,4 +7,5 @@ Just an overview about solr, using jquery to search.
 
 == Solr start
 
+  cd design
   java -Dsolr.solr.home=multicore -jar start.jar
