@@ -6,7 +6,7 @@ h2   { font-size: 200%;font-weight:normal 200;color:#000;font-family: 'Open Sans
 h3   { font-size: 150%;font-weight:normal 200;color:#000;margin-top:50px;margin-bottom:20px;font-family: 'Open Sans', Georgia, 'Times New Roman';}
 p { line-height: 25px; font-size: 100%;color:#333;font-family: 'Open Sans', sans-serif;font-weight:300;text-align: justify;margin-bottom:15px;}
 a  { text-decoration: none;color: #0099CC; border: 0px;font-weight:bold}
-.rounded {-webkit-border-radius: 5px;-webkit-border-top-right-radius: 5px;-moz-border-radius: 5px;-moz-border-radius-topright: 5px;border-radius: 5px;border-top-right-radius: 5px}
+.rounded {-webkit-border-radius: 3px;-webkit-border-top-right-radius: 3px;-moz-border-radius: 3px;-moz-border-radius-topright: 3px;border-radius: 3px;border-top-right-radius: 3px}
 div.container {margin: auto;width: 960px; padding:25px;}
 div.clear { clear:both}
 #menu ul { padding:0px 0px 50px;margin:0px;list-style:none;float:right;position:relative;}
@@ -17,3 +17,4 @@ div.status { background-color:#d9edf7;color:#3a87ad;font-weight:bold;padding: 10
 table { width: 100%;margin-top: 20px;}
 table tr th { text-align:center;color:#333;padding:10px;}
 table tr td { color:#333;padding:10px;border-top: 1px solid #333;}
+input, button { padding: 5px;margin:5px; border: 1px solid #999;}
