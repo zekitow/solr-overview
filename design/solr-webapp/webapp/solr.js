@@ -72,10 +72,26 @@ $(document).ready(function() {
     q += 'product_name:' + term + '* ';
     q += 'price:' + term + '* ';
     q += 'description:' + term + '* ';
+    if ($('#facets').is(':checked')) {
+      q += '&facet=true&facet.field=category'
+    }
     
     $.ajax({
       url: Solr.commands.find + q
     }).done(function(data) {
+    
+/*      if ($('#facets').is(':checked')) {
+        $('div.facets').removeClass('hide');
+       
+        for (var i=0,size = data.facet_counts.facet_fields.category.length; i < size; i++) {
+          item = data.facet_counts.facet_fields.category[i+1];
+          $('div.facets ul').append('<li>')
+            .append(data.facet_counts.facet_fields.category[item[i-1]] + '(')
+            .append(data.facet_counts.facet_fields.category[item[i]].append(')');
+          $('div.facets ul').append('</li>')
+        }
+      }*/
+      
       $('table').removeClass('hide'); 
       $('table thead').append('<tr>');
       $('table thead tr').append('#');
