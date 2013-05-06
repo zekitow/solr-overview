@@ -12,4 +12,4 @@ Just an overview about solr, using jquery to search.
 
 == Browser
 
-  access http://localhost:8983/solr/overview.html[link:http://localhost:8983/solr/overview.html]
+  access { http://localhost:8983/solr/overview.html }[link:http://localhost:8983/solr/overview.html]
