@@ -10,6 +10,6 @@ Just an overview about solr, using jquery to search.
   cd design
   java -Dsolr.solr.home=multicore -jar start.jar
 
-== Browser
+== Then
 
-  access { http://localhost:8983/solr/overview.html }[link:http://localhost:8983/solr/overview.html]
+  {http://localhost:8983/solr/overview.html}[link:http://localhost:8983/solr/overview.html]
