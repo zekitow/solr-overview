@@ -5,10 +5,20 @@
 Just an overview about solr, using jquery to search.
 
 
+== Create a 'Solr' database
+
+  mysql -u root -e "create database solr"
+
+=== Load schema into solr db
+
+  mysql -u root solr < schema.sql
+
+
 == Solr start
 
   cd design
   java -Dsolr.solr.home=multicore -jar start.jar
+
 
 == Then
 
