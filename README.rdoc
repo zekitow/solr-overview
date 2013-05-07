@@ -23,3 +23,5 @@ Just an overview about solr, using jquery to search.
 == Then
 
 {Access your browser}[link:http://localhost:8983/solr/overview.html]
+
+{<img src="https://github.com/zekitow/solr-overview/blob/master/solr-overview.png?raw=true" />}[https://github.com/zekitow/solr-overview/blob/master/solr-overview.png?raw=true]
