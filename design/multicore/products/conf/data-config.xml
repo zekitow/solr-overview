@@ -8,7 +8,8 @@
              products.id as product_id,
              products.name as product_name,
              products.price as price,
-             products.description as description
+             products.description as description,
+             products.surprise as surprise
         from categories
        inner join products on
              categories.id = products.category_id">
@@ -19,6 +20,7 @@
       <field column="product_name" name="product_name" />
       <field column="price"        name="price" />
       <field column="description"  name="description" />
+      <field column="surprise"     name="surprise" />
     </entity>
   </document>
 
