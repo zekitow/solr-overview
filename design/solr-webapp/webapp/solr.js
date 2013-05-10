@@ -68,10 +68,10 @@ $(document).ready(function() {
       term = $('#keyword').val();
     }
 
-    q = 'category:' + term + '* ';
-    q += 'product_name:' + term + '* ';
-    q += 'price:' + term + '* ';
-    q += 'description:' + term + '*';
+    q =  '(category:' + term + '*)^2.0 ';
+    q += '(product_name:' + term + '*)^1.8 ';
+    q += '(price:' + term + '*)^1.6 ';
+    q += '(description:' + term + '*)^1.5';
 
     var facet = ' ';
     if ($('#facets').is(':checked')) {
